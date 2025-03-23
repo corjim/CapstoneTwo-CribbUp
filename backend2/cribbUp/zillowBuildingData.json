@@ -1,0 +1,1475 @@
+{
+    [
+        {
+            "username": "tester200",
+            "firstName": "Abubakar",
+            "lastName": "Addull",
+            "password": "testingtesting",
+            "email": "tester@yahoo.com"
+        }
+    ],
+    "buildingPermits": null,
+    "contact_recipients": [
+        {
+            "agent_reason": 1,
+            "zpro": null,
+            "recent_sales": 0,
+            "review_count": 4,
+            "display_name": "Michelle Pohl",
+            "badge_type": "Premier Agent",
+            "business_name": "LoKation Real Estate",
+            "rating_average": 5,
+            "phone": {
+                "prefix": "875",
+                "areacode": "937",
+                "number": "0722"
+            },
+            "zuid": "X1-ZUsj1nru6wyb61_ako3o",
+            "image_url": "https:\/\/photos.zillowstatic.com\/fp\/2eb34c494247e7f2433c3bf070089fd7-h_g.jpg"
+        }
+    ],
+    "longitude": -86.85938,
+    "countyFIPS": "01117",
+    "imgSrc": "https:\/\/photos.zillowstatic.com\/fp\/96ae41adca30c72de9cdff438fbf42a2-p_d.jpg",
+    "livingAreaValue": 2621,
+    "streetAddress": "104 Loyola Cir",
+    "county": "Shelby County",
+    "monthlyHoaFee": null,
+    "timeZone": "America\/Chicago",
+    "taxHistory": [
+        {
+            "time": 1710214280828,
+            "valueIncreaseRate": 0.12876506,
+            "taxIncreaseRate": 0.13295364,
+            "taxPaid": 1428.02,
+            "value": 29980
+        },
+        {
+            "time": 1678595480828,
+            "valueIncreaseRate": 0.13021277,
+            "taxIncreaseRate": 0.13502021,
+            "taxPaid": 1260.44,
+            "value": 26560
+        },
+        {
+            "time": 1647059480828,
+            "valueIncreaseRate": 0.07404022,
+            "taxIncreaseRate": 0.07698426,
+            "taxPaid": 1110.5,
+            "value": 23500
+        },
+        {
+            "time": 1615523480828,
+            "valueIncreaseRate": 0.0950951,
+            "taxIncreaseRate": 0.09925159,
+            "taxPaid": 1031.12,
+            "value": 21880
+        },
+        {
+            "time": 1583983880828,
+            "valueIncreaseRate": 0.043887146,
+            "taxIncreaseRate": 0.04589349,
+            "taxPaid": 938.02,
+            "value": 19980
+        },
+        {
+            "time": 1552361480828,
+            "valueIncreaseRate": 0.07649044,
+            "taxIncreaseRate": 0,
+            "taxPaid": 896.86,
+            "value": 19140
+        },
+        {
+            "time": 1489293080828,
+            "valueIncreaseRate": 0.03976608,
+            "taxIncreaseRate": 0.11719269,
+            "taxPaid": 896.86,
+            "value": 17780
+        },
+        {
+            "time": 1426131080828,
+            "valueIncreaseRate": 0.025179856,
+            "taxIncreaseRate": 0.03408391,
+            "taxPaid": 802.78,
+            "value": 17100
+        },
+        {
+            "time": 1394595080828,
+            "valueIncreaseRate": 0,
+            "taxIncreaseRate": 0,
+            "taxPaid": 776.32,
+            "value": 16680
+        },
+        {
+            "time": 1363059080828,
+            "valueIncreaseRate": -0.009501188,
+            "taxIncreaseRate": -0.009997916,
+            "taxPaid": 776.32,
+            "value": 16680
+        },
+        {
+            "time": 1331523080828,
+            "valueIncreaseRate": -0.010575793,
+            "taxIncreaseRate": -0.01112261,
+            "taxPaid": 784.16,
+            "value": 16840
+        },
+        {
+            "time": 1299904280828,
+            "valueIncreaseRate": -0.01618497,
+            "taxIncreaseRate": -0.0170076,
+            "taxPaid": 792.98,
+            "value": 17020
+        },
+        {
+            "time": 1268368280828,
+            "valueIncreaseRate": -0.03243848,
+            "taxIncreaseRate": -0.03403102,
+            "taxPaid": 806.7,
+            "value": 17300
+        },
+        {
+            "time": 1236828680828,
+            "valueIncreaseRate": -0.006666667,
+            "taxIncreaseRate": -0.0069916826,
+            "taxPaid": 835.12,
+            "value": 17880
+        },
+        {
+            "time": 1173670280828,
+            "valueIncreaseRate": -0.8886139,
+            "taxIncreaseRate": 0.1200788,
+            "taxPaid": 841,
+            "value": 18000
+        },
+        {
+            "time": 1110601880828,
+            "valueIncreaseRate": 0.037893385,
+            "taxIncreaseRate": 0.039340056,
+            "taxPaid": 750.84,
+            "value": 161600
+        },
+        {
+            "time": 1079065880828,
+            "valueIncreaseRate": 0,
+            "taxIncreaseRate": 0,
+            "taxPaid": 722.42,
+            "value": 155700
+        },
+        {
+            "time": 1047443480828,
+            "valueIncreaseRate": 0,
+            "taxIncreaseRate": 0.11663775,
+            "taxPaid": 722.42,
+            "value": null
+        },
+        {
+            "time": 1015907480828,
+            "valueIncreaseRate": 0,
+            "taxIncreaseRate": 0,
+            "taxPaid": 646.96,
+            "value": null
+        },
+        {
+            "time": 984371480828,
+            "valueIncreaseRate": 0,
+            "taxIncreaseRate": 0,
+            "taxPaid": 646.96,
+            "value": null
+        }
+    ],
+    "dateSold": null,
+    "annualHomeownersInsurance": 1365,
+    "state": "AL",
+    "listed_by": {
+        "agent_reason": 3,
+        "zpro": false,
+        "recent_sales": 1,
+        "zuid": "X1-ZUwfjxdk92u70p_8gte6",
+        "review_count": 41,
+        "display_name": "Penny Miller",
+        "profile_url": "https:\/\/www.zillow.com\/profile\/pennysalesbham\/",
+        "business_name": "RE\/MAX Advantage South",
+        "rating_average": 5,
+        "phone": {
+            "prefix": "365",
+            "areacode": "205",
+            "number": "5419"
+        },
+        "badge_type": "Listing Agent",
+        "image_url": "https:\/\/photos.zillowstatic.com\/fp\/aa8c5025e3ad7b91f677d2ae417862ae-h_n.jpg"
+    },
+    "yearBuilt": 1995,
+    "brokerageName": "RE\/MAX Advantage South",
+    "description": "Give 104 Loyola Cir a look today! This meticulously maintained home has been carefully updated by its original owners. Real hardwoods are featured in the den, hall and main level bedrooms. Den has a wood-burning fireplace and bay window. A spacious dining room and kitchen provide ample storage. The main level accommodates, three bedrooms and laundry, including the master with a gorgeous bath. Downstairs has a large bonus room and a second master with a beautifully updated bath. Tons of storage space in the two car garage and a covered & open deck offers nice views of the wooded backyard. Conveniently located close to schools and shopping.",
+    "climate": {
+        "windSources": {
+            "primary": {
+                "insuranceRecommendation": "CRITICAL",
+                "riskScore": {
+                    "label": "MAJOR",
+                    "max": 10,
+                    "value": 6
+                },
+                "probability": [
+                    {
+                        "relativeYear": 0,
+                        "probability": 0.019999999552965
+                    },
+                    {
+                        "relativeYear": 5,
+                        "probability": 0.10999999940395
+                    },
+                    {
+                        "relativeYear": 10,
+                        "probability": 0.20000000298023
+                    },
+                    {
+                        "relativeYear": 15,
+                        "probability": 0.28000000119209
+                    },
+                    {
+                        "relativeYear": 20,
+                        "probability": 0.36000001430511
+                    },
+                    {
+                        "relativeYear": 25,
+                        "probability": 0.41999998688698
+                    },
+                    {
+                        "relativeYear": 30,
+                        "probability": 0.47999998927116
+                    }
+                ],
+                "source": {
+                    "url": "https:\/\/firststreet.org\/property\/104-loyola-cir-helena-al-35080\/10720589_fsid"
+                },
+                "insuranceSeparatePolicy": "LIKELY_REQUIRED",
+                "historicCountAll": 42
+            }
+        },
+        "floodSources": {
+            "primary": {
+                "insuranceRecommendation": "NOT_CRITICAL",
+                "riskScore": {
+                    "label": "MINIMAL",
+                    "max": 10,
+                    "value": 1
+                },
+                "femaZone": "X_UNSHADED",
+                "source": {
+                    "url": "https:\/\/firststreet.org\/property\/104-loyola-cir-helena-al-35080\/10720589_fsid"
+                },
+                "probability": [
+                    {
+                        "relativeYear": 0,
+                        "probability": 0
+                    },
+                    {
+                        "relativeYear": 5,
+                        "probability": 0
+                    },
+                    {
+                        "relativeYear": 10,
+                        "probability": 0
+                    },
+                    {
+                        "relativeYear": 15,
+                        "probability": 0
+                    },
+                    {
+                        "relativeYear": 20,
+                        "probability": 0
+                    },
+                    {
+                        "relativeYear": 25,
+                        "probability": 0
+                    },
+                    {
+                        "relativeYear": 30,
+                        "probability": 0
+                    }
+                ],
+                "insuranceSeparatePolicy": "NOT_REQUIRED",
+                "historicCountPropertyAll": 0
+            }
+        },
+        "fireSources": {
+            "primary": {
+                "insuranceRecommendation": "RECOMMENDED",
+                "riskScore": {
+                    "label": "MODERATE",
+                    "max": 10,
+                    "value": 4
+                },
+                "probability": [
+                    {
+                        "relativeYear": 0,
+                        "probability": 0.00019999999494758
+                    },
+                    {
+                        "relativeYear": 5,
+                        "probability": 0.0017999999690801
+                    },
+                    {
+                        "relativeYear": 10,
+                        "probability": 0.0043999999761581
+                    },
+                    {
+                        "relativeYear": 15,
+                        "probability": 0.0080000003799796
+                    },
+                    {
+                        "relativeYear": 20,
+                        "probability": 0.012500000186265
+                    },
+                    {
+                        "relativeYear": 25,
+                        "probability": 0.01799999922514
+                    },
+                    {
+                        "relativeYear": 30,
+                        "probability": 0.02449999935925
+                    }
+                ],
+                "source": {
+                    "url": "https:\/\/firststreet.org\/property\/104-loyola-cir-helena-al-35080\/10720589_fsid"
+                },
+                "insuranceSeparatePolicy": "LIKELY_OPTIONAL",
+                "historicCountAll": 6
+            }
+        },
+        "heatSources": {
+            "primary": {
+                "percentile98Temp": 108,
+                "hotDays": [
+                    {
+                        "relativeYear": 0,
+                        "dayCount": 7
+                    },
+                    {
+                        "relativeYear": 5,
+                        "dayCount": 9
+                    },
+                    {
+                        "relativeYear": 10,
+                        "dayCount": 11
+                    },
+                    {
+                        "relativeYear": 15,
+                        "dayCount": 13
+                    },
+                    {
+                        "relativeYear": 20,
+                        "dayCount": 15
+                    },
+                    {
+                        "relativeYear": 25,
+                        "dayCount": 17
+                    },
+                    {
+                        "relativeYear": 30,
+                        "dayCount": 19
+                    }
+                ],
+                "riskScore": {
+                    "label": "MAJOR",
+                    "max": 10,
+                    "value": 6
+                },
+                "source": {
+                    "url": "https:\/\/firststreet.org\/property\/104-loyola-cir-helena-al-35080\/10720589_fsid"
+                }
+            }
+        },
+        "airSources": {
+            "primary": {
+                "source": {
+                    "url": "https:\/\/firststreet.org\/property\/104-loyola-cir-helena-al-35080\/10720589_fsid"
+                },
+                "riskScore": {
+                    "label": "MODERATE",
+                    "max": 10,
+                    "value": 3
+                },
+                "badAirDays": [
+                    {
+                        "relativeYear": 0,
+                        "dayCount": 3
+                    },
+                    {
+                        "relativeYear": 5,
+                        "dayCount": 3
+                    },
+                    {
+                        "relativeYear": 10,
+                        "dayCount": 3
+                    },
+                    {
+                        "relativeYear": 15,
+                        "dayCount": 4
+                    },
+                    {
+                        "relativeYear": 20,
+                        "dayCount": 4
+                    },
+                    {
+                        "relativeYear": 25,
+                        "dayCount": 4
+                    },
+                    {
+                        "relativeYear": 30,
+                        "dayCount": 4
+                    }
+                ]
+            }
+        }
+    },
+    "latitude": 33.280838,
+    "nearbyHomes": [
+        {
+            "livingArea": 2172,
+            "livingAreaValue": 2172,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.41000918273646,
+            "lotSize": 17860,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/maps.googleapis.com\/maps\/api\/streetview?location=106+Loyola+Cir%2C+Helena%2C+AL+35080&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=L3XfjWxe_lLejTW2zqE7wC6XWOM="
+                }
+            ],
+            "zpid": 197831,
+            "longitude": -86.85964,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "106 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 307700,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "OTHER",
+            "currency": "USD",
+            "latitude": 33.280727
+        },
+        {
+            "livingArea": 1958,
+            "livingAreaValue": 1958,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.51799816345271,
+            "lotSize": 22564,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/maps.googleapis.com\/maps\/api\/streetview?location=102+Loyola+Cir%2C+Helena%2C+AL+35080&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=nkPw7BchuUeFiHv-TtTGi77oMF4="
+                }
+            ],
+            "zpid": 197833,
+            "longitude": -86.85906,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "102 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 279700,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "OTHER",
+            "currency": "USD",
+            "latitude": 33.281
+        },
+        {
+            "livingArea": 1880,
+            "livingAreaValue": 1880,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.35,
+            "lotSize": 15245,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/photos.zillowstatic.com\/fp\/3b13c3e724c86d34ba24dcd8b111c0cd-p_c.jpg"
+                }
+            ],
+            "zpid": 197830,
+            "longitude": -86.85982,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "108 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 304000,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "RECENTLY_SOLD",
+            "currency": "USD",
+            "latitude": 33.28051
+        },
+        {
+            "livingArea": 2848,
+            "livingAreaValue": 2848,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.35,
+            "lotSize": 15245,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/photos.zillowstatic.com\/fp\/ca23f2df62e660974a06d40b6467ac7a-p_c.jpg"
+                }
+            ],
+            "zpid": 197836,
+            "longitude": -86.859245,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "105 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 317600,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "OTHER",
+            "currency": "USD",
+            "latitude": 33.280235
+        },
+        {
+            "livingArea": 1973,
+            "livingAreaValue": 1973,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.60199724517906,
+            "lotSize": 26223,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/photos.zillowstatic.com\/fp\/707cea20c2f886b9c95ca1b807c7953b-p_c.jpg"
+                }
+            ],
+            "zpid": 197834,
+            "longitude": -86.85872,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "101 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 327300,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "OTHER",
+            "currency": "USD",
+            "latitude": 33.28054
+        },
+        {
+            "livingArea": 2281,
+            "livingAreaValue": 2281,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.34499540863177,
+            "lotSize": 15028,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/maps.googleapis.com\/maps\/api\/streetview?location=103+Loyola+Cir%2C+Helena%2C+AL+35080&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=nNyHN7kCuXFIf3Gybo5EvVTPOsA="
+                }
+            ],
+            "zpid": 197835,
+            "longitude": -86.85892,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "103 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 308100,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "OTHER",
+            "currency": "USD",
+            "latitude": 33.28032
+        },
+        {
+            "livingArea": 1492,
+            "livingAreaValue": 1492,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.76,
+            "lotSize": 33105,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/photos.zillowstatic.com\/fp\/40e6626930e1b7a3506e598c44ae31b1-p_c.jpg"
+                }
+            ],
+            "zpid": 197745,
+            "longitude": -86.85859,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "818 Saint Charles Ln",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 277500,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "SOLD",
+            "currency": "USD",
+            "latitude": 33.28114
+        },
+        {
+            "livingArea": 2524,
+            "livingAreaValue": 2524,
+            "lotAreaUnits": "Acres",
+            "lotAreaValue": 0.34499540863177,
+            "lotSize": 15028,
+            "miniCardPhotos": [
+                {
+                    "url": "https:\/\/maps.googleapis.com\/maps\/api\/streetview?location=107+Loyola+Cir%2C+Helena%2C+AL+35080&size=316x234&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=zqcF56ItvCtLSSc2OPSVOpJa-yU="
+                }
+            ],
+            "zpid": 197837,
+            "longitude": -86.85951,
+            "livingAreaUnits": "Square Feet",
+            "address": {
+                "city": "Helena",
+                "state": "AL",
+                "streetAddress": "107 Loyola Cir",
+                "zipcode": "35080"
+            },
+            "livingAreaUnitsShort": "sqft",
+            "price": 327300,
+            "homeType": "SINGLE_FAMILY",
+            "homeStatus": "OTHER",
+            "currency": "USD",
+            "latitude": 33.2801
+        }
+    ],
+    "priceHistory": [
+        {
+            "priceChangeRate": 0,
+            "date": "2025-03-04",
+            "source": "GALMLS",
+            "postingIsRental": false,
+            "time": 1741046400000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": "GALMLS",
+                "infoString3": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_logo_inf_11.jpg",
+                "infoString1": "21408088"
+            },
+            "pricePerSquareFoot": 124,
+            "buyerAgent": null,
+            "event": "Pending sale",
+            "price": 324900
+        },
+        {
+            "priceChangeRate": 0,
+            "date": "2025-02-19",
+            "source": "GALMLS",
+            "postingIsRental": false,
+            "time": 1739923200000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": "GALMLS",
+                "infoString3": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_logo_inf_11.jpg",
+                "infoString1": "21408088"
+            },
+            "pricePerSquareFoot": 124,
+            "buyerAgent": null,
+            "event": "Contingent",
+            "price": 324900
+        },
+        {
+            "priceChangeRate": -0.030149253731343,
+            "date": "2025-01-30",
+            "source": "GALMLS",
+            "postingIsRental": false,
+            "time": 1738195200000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": "GALMLS",
+                "infoString3": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_logo_inf_11.jpg",
+                "infoString1": "21408088"
+            },
+            "pricePerSquareFoot": 124,
+            "buyerAgent": null,
+            "event": "Price change",
+            "price": 324900
+        },
+        {
+            "priceChangeRate": -0.042583595312947,
+            "date": "2025-01-06",
+            "source": "GALMLS",
+            "postingIsRental": false,
+            "time": 1736121600000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": "GALMLS",
+                "infoString3": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_logo_inf_11.jpg",
+                "infoString1": "21404475"
+            },
+            "pricePerSquareFoot": 128,
+            "buyerAgent": null,
+            "event": "Price change",
+            "price": 335000
+        },
+        {
+            "priceChangeRate": 1.6527672479151,
+            "date": "2024-12-09",
+            "source": "GALMLS",
+            "postingIsRental": false,
+            "time": 1733702400000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": "GALMLS",
+                "infoString3": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_logo_inf_11.jpg",
+                "infoString1": "21404475"
+            },
+            "pricePerSquareFoot": 133,
+            "buyerAgent": null,
+            "event": "Listed for sale",
+            "price": 349900
+        },
+        {
+            "priceChangeRate": 0.015396458814473,
+            "date": "2014-07-08",
+            "source": "Agent Provided",
+            "postingIsRental": false,
+            "time": 1404777600000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": null,
+                "infoString3": null,
+                "infoString1": null
+            },
+            "pricePerSquareFoot": 50,
+            "buyerAgent": {
+                "name": "Jake Scheloske",
+                "photo": {
+                    "url": "https:\/\/photos.zillowstatic.com\/h_e\/ISfsqbx8g9vzdr0000000000.jpg"
+                },
+                "profileUrl": "\/profile\/JakeSellsErie\/"
+            },
+            "event": "Sold",
+            "price": 131900
+        },
+        {
+            "priceChangeRate": 0,
+            "date": "1996-03-14",
+            "source": "Agent Provided",
+            "postingIsRental": false,
+            "time": 826761600000,
+            "sellerAgent": null,
+            "showCountyLink": false,
+            "attributeSource": {
+                "infoString2": null,
+                "infoString3": null,
+                "infoString1": null
+            },
+            "pricePerSquareFoot": 50,
+            "buyerAgent": null,
+            "event": "Sold",
+            "price": 129900
+        }
+    ],
+    "neighborhoodMapThumb": [
+        {
+            "url": "https:\/\/photos.zillowstatic.com\/fp\/96ae41adca30c72de9cdff438fbf42a2-p_c.jpg"
+        }
+    ],
+    "schools": [
+        {
+            "link": "https:\/\/www.greatschools.org\/alabama\/helena\/1924-Helena-Intermediate-School\/",
+            "rating": 8,
+            "totalCount": null,
+            "distance": 0.9,
+            "assigned": null,
+            "name": "Helena Intermediate School",
+            "studentsPerTeacher": null,
+            "isAssigned": null,
+            "size": null,
+            "level": "Elementary",
+            "grades": "3-5",
+            "type": "Public"
+        },
+        {
+            "link": "https:\/\/www.greatschools.org\/alabama\/helena\/3592-Helena-Middle-School\/",
+            "rating": 6,
+            "totalCount": null,
+            "distance": 0.8,
+            "assigned": null,
+            "name": "Helena Middle School",
+            "studentsPerTeacher": null,
+            "isAssigned": null,
+            "size": null,
+            "level": "Middle",
+            "grades": "6-8",
+            "type": "Public"
+        },
+        {
+            "link": "https:\/\/www.greatschools.org\/alabama\/helena\/4206-Helena-High-School\/",
+            "rating": 7,
+            "totalCount": null,
+            "distance": 0.5,
+            "assigned": null,
+            "name": "Helena High School",
+            "studentsPerTeacher": null,
+            "isAssigned": null,
+            "size": null,
+            "level": "High",
+            "grades": "9-12",
+            "type": "Public"
+        }
+    ],
+    "rentZestimate": 2360,
+    "city": "Helena",
+    "providerListingID": null,
+    "currency": "USD",
+    "listingProvider": null,
+    "propertyTaxRate": 0.43,
+    "isShowcaseListing": false,
+    "openHouseSchedule": {},
+    "mortgageRates": null,
+    "address": {
+        "community": null,
+        "city": "Helena",
+        "state": "AL",
+        "neighborhood": null,
+        "subdivision": "St Charles Place",
+        "streetAddress": "104 Loyola Cir",
+        "zipcode": "35080"
+    },
+    "cityId": 35381,
+    "timeOnZillow": "40 days",
+    "priceChange": null,
+    "zestimate": 321800,
+    "zpid": 197832,
+    "countyId": 1381,
+    "homeType": "SINGLE_FAMILY",
+    "livingAreaUnits": "sqft",
+    "pageViewCount": 803,
+    "homeInsights": [
+        {
+            "insights": [
+                {
+                    "treatmentId": "model_0",
+                    "modelId": "z-nrt-pdc-llm-tags",
+                    "phrases": [
+                        "Tons of storage space",
+                        "Beautifully updated bath",
+                        "Wood-burning fireplace",
+                        "Bay window",
+                        "Spacious dining room",
+                        "Gorgeous bath",
+                        "Covered and open deck"
+                    ]
+                },
+                {
+                    "treatmentId": "model_1",
+                    "modelId": "z-nrt-pdc-llm-tags",
+                    "phrases": [
+                        "Tons of storage space",
+                        "Beautifully updated bath",
+                        "Wood-burning fireplace",
+                        "Bay window",
+                        "Spacious dining room",
+                        "Gorgeous bath",
+                        "Covered and open deck"
+                    ]
+                }
+            ]
+        }
+    ],
+    "bathrooms": 3,
+    "neighborhoodRegion": null,
+    "building": null,
+    "zipcode": "35080",
+    "zestimateLowPercent": "5",
+    "stateId": 4,
+    "brokerId": null,
+    "url": "\/homedetails\/104-Loyola-Cir-Helena-AL-35080\/197832_zpid\/",
+    "solarPotential": null,
+    "priceChangeDateString": null,
+    "attributionInfo": {
+        "buyerAgentName": null,
+        "infoString3": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_95_35.jpg",
+        "mlsName": "GALMLS",
+        "coAgentLicenseNumber": null,
+        "listingAgreement": null,
+        "listingOffices": [
+            {
+                "associatedOfficeType": "listOffice",
+                "officeName": "RE\/MAX Advantage South"
+            }
+        ],
+        "infoString10": "IDX information is provided exclusively for personal, non-commercial use, and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Information is deemed reliable but not guaranteed.\n\n",
+        "buyerAgentMemberStateLicense": null,
+        "brokerName": "RE\/MAX Advantage South",
+        "listingAttributionContact": null,
+        "lastUpdated": "2025-03-03 20:56:55",
+        "trueStatus": null,
+        "listingAgentAttributionContact": null,
+        "agentEmail": null,
+        "agentName": "Penny Miller",
+        "attributionTitle": null,
+        "mlsId": "21408088",
+        "coAgentName": null,
+        "coAgentNumber": null,
+        "infoString5": "205-365-5419",
+        "listingAgents": [
+            {
+                "memberStateLicense": null,
+                "memberFullName": "Penny Miller",
+                "associatedAgentType": "listAgent"
+            }
+        ],
+        "agentPhoneNumber": "205-365-5419",
+        "agentLicenseNumber": null,
+        "providerLogo": "https:\/\/photos.zillowstatic.com\/fp\/4b0ddc61a231f7f462d00fc896ee550f-zillow_web_95_35.jpg",
+        "infoString16": null,
+        "buyerBrokerageName": null,
+        "mlsDisclaimer": "IDX information is provided exclusively for personal, non-commercial use, and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Information is deemed reliable but not guaranteed.\n\n",
+        "brokerPhoneNumber": "+1 (205) 991-1500",
+        "lastChecked": "2025-03-11 20:01:56"
+    },
+    "homeStatus": "PENDING",
+    "homeFacts": null,
+    "resoFacts": {
+        "hasAttachedProperty": false,
+        "frontageType": null,
+        "poolFeatures": [
+            "None"
+        ],
+        "flooring": [
+            "Hardwood",
+            "Tile",
+            "Vinyl"
+        ],
+        "foundationDetails": [
+            "Basement"
+        ],
+        "accessibilityFeatures": null,
+        "hasGarage": true,
+        "hasPetsAllowed": null,
+        "bodyType": null,
+        "topography": null,
+        "landLeaseExpirationDate": null,
+        "hasAdditionalParcels": false,
+        "parkName": null,
+        "livingQuarters": {},
+        "taxAssessedValue": 299800,
+        "atAGlanceFacts": [
+            {
+                "factValue": "Single Family Residence",
+                "factLabel": "Type"
+            },
+            {
+                "factValue": "1995",
+                "factLabel": "Year Built"
+            },
+            {
+                "factValue": "Central",
+                "factLabel": "Heating"
+            },
+            {
+                "factValue": "Central Air",
+                "factLabel": "Cooling"
+            },
+            {
+                "factValue": "2 Garage spaces",
+                "factLabel": "Parking"
+            },
+            {
+                "factValue": "0.37 Acres",
+                "factLabel": "Lot"
+            },
+            {
+                "factValue": "40 Days",
+                "factLabel": "Days on Zillow"
+            },
+            {
+                "factValue": "$124",
+                "factLabel": "Price\/sqft"
+            },
+            {
+                "factValue": null,
+                "factLabel": "Offer Review Date"
+            }
+        ],
+        "offerReviewDate": null,
+        "horseYN": null,
+        "view": [
+            "None"
+        ],
+        "rooms": [
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "MasterBedroom",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "Bedroom1",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "Bedroom2",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "Bedroom3",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "Basement",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "MasterBathroom",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "Bathroom1",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "DiningRoom",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "FamilyRoom",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": null,
+                "roomAreaSource": null,
+                "roomType": "Kitchen",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": "First",
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": [
+                    "Laminate Counters"
+                ],
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            },
+            {
+                "level": null,
+                "dimensions": null,
+                "features": null,
+                "roomAreaUnits": null,
+                "roomArea": "1624",
+                "roomAreaSource": null,
+                "roomType": "Basement",
+                "roomDescription": null,
+                "roomWidth": null,
+                "roomLevel": null,
+                "description": null,
+                "roomLengthWidthUnits": null,
+                "roomLength": null,
+                "roomFeatures": null,
+                "roomDimensions": null,
+                "roomLengthWidthSource": null,
+                "area": null
+            }
+        ],
+        "belowGradeFinishedArea": "899",
+        "feesAndDues": {},
+        "cityRegion": "Helena",
+        "mainLevelBathrooms": null,
+        "hasPrivatePool": null,
+        "landLeaseAmount": null,
+        "waterSource": [
+            "Public"
+        ],
+        "exteriorFeatures": {},
+        "inclusions": null,
+        "hasFireplace": true,
+        "gas": null,
+        "propertyCondition": null,
+        "elevationUnits": null,
+        "exclusions": null,
+        "mainLevelBedrooms": null,
+        "numberOfUnitsVacant": null,
+        "hasWaterfrontView": null,
+        "bathroomsOneQuarter": null,
+        "lotSize": "0.37 Acres",
+        "entryLevel": null,
+        "media": [
+            {
+                "mediaCategory": "UnbrandedVirtualTour",
+                "mediaURL": "https:\/\/www.propertypanorama.com\/instaview\/bham\/21408088"
+            }
+        ],
+        "greenWaterConservation": null,
+        "stories": 1,
+        "livingArea": "2,621 sqft",
+        "commonWalls": null,
+        "listingTerms": null,
+        "otherParking": null,
+        "associationFee": null,
+        "marketingType": null,
+        "greenIndoorAirQuality": null,
+        "greenSustainability": null,
+        "livingAreaRangeUnits": null,
+        "associationPhone": null,
+        "greenBuildingVerificationType": null,
+        "hasAttachedGarage": false,
+        "bedrooms": 4,
+        "architecturalStyle": null,
+        "listingId": null,
+        "structureType": null,
+        "interiorFeatures": [
+            "High Ceilings",
+            "Soaking Tub",
+            "Separate Shower",
+            "Double Vanity",
+            "Tub\/Shower Combo"
+        ],
+        "horseAmenities": null,
+        "garageParkingCapacity": 2,
+        "developmentStatus": null,
+        "lotFeatures": null,
+        "roofType": null,
+        "compensationBasedOn": null,
+        "greenEnergyGeneration": null,
+        "daysOnZillow": 40,
+        "listAOR": null,
+        "bathrooms": 3,
+        "elementarySchool": "Helena",
+        "zoningDescription": null,
+        "hasCarport": false,
+        "yearBuiltEffective": null,
+        "irrigationWaterRightsAcres": null,
+        "constructionMaterials": [
+            "Brick Over Foundation"
+        ],
+        "fireplaceFeatures": [
+            "Masonry",
+            "Den",
+            "Wood Burning"
+        ],
+        "hoaFeeTotal": null,
+        "appliances": [
+            "Dishwasher",
+            "Electric Oven",
+            "Electric Water Heater"
+        ],
+        "sewer": null,
+        "bathroomsPartial": null,
+        "fencing": null,
+        "spaFeatures": null,
+        "waterViewYN": null,
+        "buildingName": "Att",
+        "attic": "Pull Down Stairs,Yes",
+        "petsMaxWeight": null,
+        "aboveGradeFinishedArea": "1,722",
+        "waterfrontFeatures": [
+            "No"
+        ],
+        "additionalParcelsDescription": null,
+        "canRaiseHorses": false,
+        "hasLandLease": false,
+        "communityFeatures": null,
+        "waterBodyName": null,
+        "middleOrJuniorSchool": "Helena",
+        "lotSizeDimensions": null,
+        "virtualTour": "https:\/\/www.propertypanorama.com\/instaview\/bham\/21408088",
+        "contingency": null,
+        "yearBuilt": 1995,
+        "utilities": [
+            "Sewer Connected"
+        ],
+        "totalActualRent": null,
+        "bathroomsFull": 3,
+        "parcelNumber": "135213003003.000",
+        "incomeIncludes": null,
+        "highSchool": "Helena",
+        "taxAnnualAmount": 1428,
+        "subdivisionName": "St Charles Place",
+        "storiesTotal": null,
+        "storiesDecimal": 1,
+        "specialListingConditions": "N\/A",
+        "windowFeatures": [
+            "Bay Window(s)"
+        ],
+        "ownership": null,
+        "woodedArea": null,
+        "middleOrJuniorSchoolDistrict": null,
+        "associationPhone2": null,
+        "onMarketDate": 1738272472000,
+        "roomTypes": [
+            "Bedroom",
+            "Bonus Room",
+            "Den\/Family (ROOM)",
+            "Dining Room",
+            "Bathroom",
+            "Kitchen",
+            "Master Bathroom",
+            "Master Bedroom"
+        ],
+        "frontageLength": null,
+        "roadSurfaceType": null,
+        "associationAmenities": null,
+        "propertySubType": [
+            "Single Family Residence"
+        ],
+        "hasCooling": true,
+        "levels": "One",
+        "coveredParkingCapacity": 2,
+        "foundationArea": null,
+        "zoning": null,
+        "hoaFee": null,
+        "livingAreaRange": null,
+        "parkingFeatures": [
+            "Driveway",
+            "Garage Faces Side"
+        ],
+        "parkingCapacity": 2,
+        "cropsIncludedYN": null,
+        "tenantPays": null,
+        "doorFeatures": null,
+        "otherStructures": null,
+        "otherFacts": {},
+        "greenEnergyEfficient": null,
+        "hasView": true,
+        "openParkingCapacity": null,
+        "securityFeatures": null,
+        "numberOfUnitsInCommunity": null,
+        "basement": "Full,Partially Finished,Block",
+        "basementYN": true,
+        "bathroomsHalf": 0,
+        "ownershipType": null,
+        "associationName": null,
+        "associations": {},
+        "waterView": null,
+        "electric": null,
+        "cumulativeDaysOnMarket": null,
+        "hasOpenParking": true,
+        "hasElectricOnProperty": null,
+        "hasHomeWarranty": false,
+        "homeType": "SingleFamily",
+        "isSeniorCommunity": null,
+        "municipality": null,
+        "bathroomsThreeQuarter": null,
+        "hasSpa": false,
+        "buildingAreaSource": null,
+        "associationFee2": null,
+        "cooling": [
+            "Central Air"
+        ],
+        "hasHeating": true,
+        "associationName2": null,
+        "hasRentControl": null,
+        "elementarySchoolDistrict": null,
+        "otherEquipment": null,
+        "additionalFeeInfo": null,
+        "buildingArea": null,
+        "furnished": false,
+        "vegetation": null,
+        "patioAndPorchFeatures": [
+            "Porch",
+            "Covered (DECK)",
+            "Open (DECK)",
+            "Deck"
+        ],
+        "bathroomsFloat": 3,
+        "builderName": null,
+        "highSchoolDistrict": null,
+        "entryLocation": null,
+        "laundryFeatures": [
+            "Electric Dryer Hookup",
+            "Washer Hookup",
+            "Main Level",
+            "Laundry Room",
+            "Laundry (ROOM)",
+            "Yes"
+        ],
+        "buildingFeatures": null,
+        "fireplaces": 1,
+        "heating": [
+            "Central"
+        ],
+        "availabilityDate": null,
+        "carportParkingCapacity": 0,
+        "hasAssociation": null,
+        "irrigationWaterRightsYN": null,
+        "isNewConstruction": null,
+        "associationFeeIncludes": [
+            "Maintenance Grounds"
+        ],
+        "leaseTerm": null,
+        "pricePerSquareFoot": 124,
+        "builderModel": null,
+        "elevation": null
+    },
+    "datePosted": "2025-01-30",
+    "bedrooms": 4,
+    "propertyTypeDimension": "Single Family",
+    "mortgageZHLRates": {
+        "thirtyYearFixedBucket": {
+            "rate": 6.337,
+            "rateSource": "ZGMI",
+            "lastUpdated": 1741739757726
+        },
+        "fifteenYearFixedBucket": {
+            "rate": 5.691,
+            "rateSource": "ZGMI",
+            "lastUpdated": 1741739757726
+        },
+        "arm5Bucket": {
+            "rate": 6.259,
+            "rateSource": "ZGMI",
+            "lastUpdated": 1741739757726
+        }
+    },
+    "comingSoonOnMarketDate": null,
+    "favoriteCount": 34,
+    "listingSubType": {
+        "is_comingSoon": false,
+        "is_pending": true,
+        "is_forAuction": false,
+        "is_bankOwned": false,
+        "is_FSBA": true,
+        "is_FSBO": false,
+        "is_newHome": false,
+        "is_foreclosure": false
+    },
+    "zestimateHighPercent": "5",
+    "mlsid": "21408088",
+    "livingArea": 2621,
+    "isListedByOwner": null,
+    "buildingId": null,
+    "country": "USA",
+    "price": 324900,
+    "priceChangeDate": null,
+    "contingentListingType": null
+}

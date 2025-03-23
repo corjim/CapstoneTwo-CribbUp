@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS favorites;
+DROP TABLE IF EXISTS users;
+
+
+CREATE TABLE users (
+  username VARCHAR(25) PRIMARY KEY,
+  password TEXT NOT NULL,
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
+  email TEXT NOT NULL
+    CHECK (email LIKE '%@%'),
+  is_admin BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE TABLE favorites (
+  id SERIAL PRIMARY KEY,
+favs TEXT NOT NULL REFERENCES users ON DELETE CASCADE
+);
+
+CREATE TABLE favorites (
+  favs TEXT
+    REFERENCES users ON DELETE CASCADE,
+  favs_id INTEGER
+    REFERENCES users ON DELETE CASCADE,
+  PRIMARY KEY (favs, favs_id)
+);
