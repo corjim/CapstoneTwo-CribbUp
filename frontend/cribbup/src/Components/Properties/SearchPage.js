@@ -1,10 +1,7 @@
-import React, { useState, useEffect, useCallback, useContext } from "react";
-import { AuthContext } from "../Context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useCallback } from "react";
 import CribbUp from "../../Api/CribbupApi";
 import { Button, Container, Row, Col, Spinner, Form } from "react-bootstrap";
 import PropertyCard from "./PropertyCard";
-
 import "./SearchPage.css";
 
 function SearchPage() {
@@ -19,20 +16,14 @@ function SearchPage() {
     const propertiesPerPage = 12;
     const [error, setError] = useState(null);
 
-    const { currentUser } = useContext(AuthContext); // ✅ Get user data
-    const navigate = useNavigate();
+    const [searchButtonClicked, setSearchButtonClicked] = useState(false); // Ensures API calls is not made on keystrikes.
 
     const handleChange = (evt) => {
         setLocation(evt.target.value);
     };
 
-    // ✅ Wrap handleSearch with useCallback to prevent unnecessary re-renders
+    // useCallback to prevent unnecessary re-renders
     const handleSearch = useCallback(async (newPage = 1) => {
-        if (!currentUser) {
-            console.log("🚨 User not logged in. Redirecting to login...");
-            navigate("/login");
-        }
-
         if (!location.trim()) {
             setError("Please enter a valid city or ZIP code.");
             return;
@@ -40,7 +31,7 @@ function SearchPage() {
 
         setLoading(true);
         setError(null);
-
+        setSearchButtonClicked(true);
         try {
             const data = await CribbUp.searchProperties(location, newPage, propertiesPerPage);
 
@@ -52,7 +43,7 @@ function SearchPage() {
             setTotalPages(totalPages);
             setCurrentPage(newPage);
 
-            // ✅ Persist data on refresh
+            //Persist data on refresh
             localStorage.setItem("lastLocation", location);
             localStorage.setItem("savedProperties", JSON.stringify(propertiesArray));
             localStorage.setItem("lastPage", newPage);
@@ -62,15 +53,16 @@ function SearchPage() {
         } finally {
             setLoading(false);
         }
-    }, [location]
+    }, []
     );
 
-    // ✅ Run search on component mount and when location or properties change
+    //Run search on component mount and when location or properties change
     useEffect(() => {
-        if (location) {
+        if (location && searchButtonClicked) {
             handleSearch(currentPage);
+            setSearchButtonClicked(false);
         }
-    }, [currentUser, navigate, location, handleSearch, currentPage]);
+    }, [location, handleSearch, currentPage]);
 
     return (
         <Container className="search-page-container">
@@ -102,10 +94,12 @@ function SearchPage() {
             {/* Property List */}
             {!loading && properties.length > 0 && (
                 <Container className="search-results-container">
+
                     <h2 className="text-center mt-4 location-title"> 🏡 Properties in {location} 🏡</h2>
-                    <Row>
+
+                    <Row className="property-row" >
                         {properties.map((property) => (
-                            <Col key={property.zpid} md={4} className="mb-4">
+                            <Col key={property.zpid} md={4} className=" property-card mb-4">
                                 <PropertyCard property={property} />
                             </Col>
                         ))}

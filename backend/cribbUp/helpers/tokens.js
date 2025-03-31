@@ -12,7 +12,7 @@ function createToken(user) {
     isAdmin: user.isAdmin || false,
   };
 
-  return jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: "10h" });
+  return jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: "24h" });
 }
 
 module.exports = { createToken };

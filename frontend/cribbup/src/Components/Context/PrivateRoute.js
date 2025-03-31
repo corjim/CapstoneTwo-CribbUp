@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-import { AuthContext } from "../../Context/AuthContext";
+import { AuthContext } from "./AuthContext";
 
 function PrivateRoute() {
-    const authContext = useContext(AuthContext); // ✅ Ensure context is available
+    const authContext = useContext(AuthContext);
 
     if (!authContext) {
         console.error("AuthContext is undefined in PrivateRoute.js!");
@@ -12,7 +12,7 @@ function PrivateRoute() {
 
     const { currentUser, loading } = authContext;
 
-    if (loading) return null; // ✅ Wait for auth state to load
+    if (loading) return null; // Wait for auth state to load
 
     return currentUser ? <Outlet /> : <Navigate to="/login" replace />;
 }

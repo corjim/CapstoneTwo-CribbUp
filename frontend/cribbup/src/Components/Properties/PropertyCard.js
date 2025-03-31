@@ -1,22 +1,20 @@
-import React from "react";
+import React, { memo } from "react";
 import { Card, Button, Carousel } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom"; // ✅ Ensure React Router is imported
+import { Link, useNavigate } from "react-router-dom";
+import FavoriteCard from "./FavoriteCard";
+
 import "./SearchPage.css";
 
-function PropertyCard({ property }) {
-    const navigate = useNavigate(); // ✅ Use for navigation
+const PropertyCard = ({ property }) => {
+    const navigate = useNavigate();
 
     if (!property) return <p>No property data available</p>;
 
-
-    const carouselPhotos = property.carouselPhotos ? property.carouselPhotos.slice(0, 10) : [];
-
-    // Debugging: carouselPhotos exists?
-    console.log("Property Data in PropertyCard:", property);
-    console.log("carouselPhotos in PropertyCard:", carouselPhotos);
+    // Log in and ensure carousel has photos.
+    const carouselPhotos = property.carouselPhotos ? property.carouselPhotos : [];
 
     return (
-        <Card className="shadow" data-bs-theme="dark">
+        <Card className="shadow property-card" >
             {/* Clickable Carousel */}
             {carouselPhotos.length > 0 ? (
                 <div
@@ -72,7 +70,6 @@ function PropertyCard({ property }) {
                     <strong>Bedrooms:</strong> {property.bedrooms || "N/A"} |
                     <strong> Bathrooms:</strong> {property.bathrooms || "N/A"} <br />
                     <strong>Area:</strong> {property.livingArea ? `${property.livingArea} sqft` : "N/A"} <br />
-                    <strong>Year Built:</strong> {property.yearBuilt ? property.yearBuilt : null} <br />
                     <strong>Listing Status:</strong> {property.listingStatus || "Unavailable"}
                 </Card.Text>
 
@@ -85,11 +82,14 @@ function PropertyCard({ property }) {
                     }}
                     className="text-decoration-none"
                 >
-                    <Button variant="primary">Dig in</Button>
+                    <Button variant="primary">Discover crib</Button>
                 </Link>
+
+                {/* Favorite State and button */}
+                <FavoriteCard property={property} />
             </Card.Body>
         </Card>
     );
-}
+};
 
 export default PropertyCard;

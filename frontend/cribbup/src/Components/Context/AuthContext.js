@@ -1,18 +1,17 @@
 import React, { createContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { jwtDecode } from "jwt-decode"; // ✅ Fix import
+import { jwtDecode } from "jwt-decode";
 import CribbUp from "../../Api/CribbupApi";
 
-const AuthContext = createContext(); // ✅ Correct export
-
+const AuthContext = createContext();
 function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState(null);
     const [token, setToken] = useState(localStorage.getItem("token") || null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
-        let isMounted = true; // ✅ Prevent memory leaks
 
         async function fetchUser() {
             if (!token) {
@@ -23,15 +22,13 @@ function AuthProvider({ children }) {
 
             try {
                 setLoading(true);
-                const decodedToken = jwtDecode(token); // ✅ Ensure token is valid
+                const decodedToken = jwtDecode(token); //Ensure token is valid
 
-                console.log("Decoded token:", decodedToken);
+                const userData = await CribbUp.getUser(decodedToken.username);
 
-                const userData = await CribbUp.getUser(decodedToken.username); // ✅ Fix: Use username
-                if (isMounted) {
-                    setCurrentUser(userData);
-                    setLoading(false);
-                }
+                setCurrentUser(userData);
+                setLoading(false);
+
             } catch (error) {
                 console.error("Error fetching user:", error);
                 logout();
@@ -39,28 +36,32 @@ function AuthProvider({ children }) {
         }
 
         fetchUser();
-
-        return () => {
-            isMounted = false; // ✅ Cleanup function to prevent updates after unmount
-        };
     }, [token]);
 
     function login(newToken) {
-        console.log("Login successful, token received:", newToken);
-        localStorage.setItem("token", newToken);
-        setToken(newToken);
-        navigate("/search");
+        if (!newToken) {
+            return;
+        }
+        try {
+            localStorage.setItem("token", newToken);
+            setToken(newToken);
+            navigate("/");
+        } catch (error) {
+            setError(error)
+        };
     }
 
+    // Allows user to sign up.
     function signup(userData) {
         CribbUp.signup(userData)
             .then((newToken) => {
-                console.log("Signup successful, token set:", newToken);
+
                 setToken(newToken);
                 localStorage.setItem("token", newToken);
-                navigate("/profile");
+                navigate("/");
             })
             .catch((error) => {
+                setError(error)
                 console.error("Signup failed:", error);
             });
     }
@@ -75,9 +76,10 @@ function AuthProvider({ children }) {
 
     return (
         <AuthContext.Provider value={{ currentUser, setCurrentUser, token, login, signup, logout, loading }}>
+            {error}
             {children}
         </AuthContext.Provider>
     );
 }
 
-export { AuthContext, AuthProvider }; // ✅ Correct export
+export { AuthContext, AuthProvider }; 

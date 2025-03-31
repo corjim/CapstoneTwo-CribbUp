@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import { AuthProvider } from "./Context/AuthContext";
+import { AuthProvider } from "../src/Components/Context/AuthContext";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -11,9 +12,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <AuthProvider>   {/* ✅ Wrap entire App */}
-    <App />
-  </AuthProvider>,
+  <BrowserRouter>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

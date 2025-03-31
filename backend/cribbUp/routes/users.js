@@ -119,17 +119,4 @@ router.delete("/:username", ensureCorrectUserOrAdmin, async function (req, res, 
 });
 
 
-// THIS ROUTE WILL FEATURE THE USER FAVORITES.
-router.post("/:username/jobs/:id", ensureCorrectUserOrAdmin, async function (req, res, next) {
-  try {
-    const jobId = +req.params.id;
-    await User.applyToJob(req.params.username, jobId);
-    return res.json({ applied: jobId });
-  } catch (err) {
-    return next(err);
-  }
-});
-
-
-
 module.exports = router;

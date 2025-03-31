@@ -1,6 +1,9 @@
 import React from "react";
 import { Card, Button, ListGroup, Carousel } from "react-bootstrap";
+import "./SearchPage.css";
 
+
+// A foundation to display return values of a property.
 function BuildingCard({ property, carouselPhotos }) {
     return (
         <Card className="shadow mt-4">
@@ -72,6 +75,7 @@ function BuildingCard({ property, carouselPhotos }) {
                         View on Zillow
                     </Button>
                 )}
+
             </Card.Body>
         </Card>
     );

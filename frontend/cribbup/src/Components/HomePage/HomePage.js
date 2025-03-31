@@ -6,11 +6,12 @@ import "./HomePage.css";
 function HomePage() {
     return (
         <div className="homepage">
+
             {/* Hero Section */}
             <div className="hero">
                 <Container className="text-center">
                     <h1 className="hero-title">Welcome to CribbUp</h1>
-                    <p className="hero-subtitle">Your one-stop solution for finding the perfect home</p>
+                    <p className="hero-subtitle">Your one-stop solution for finding the perfect a crib.</p>
 
                     <Link to="/search">
                         <Button variant="info" size="lg" className="hero-btn">

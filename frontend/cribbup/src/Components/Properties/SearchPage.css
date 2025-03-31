@@ -52,13 +52,29 @@
     padding: 10px 20px;
 }
 
+/* property Body */
+
+.property-card {
+    letter-spacing: 2px;
+}
+
+.props-body {
+    background: #dbdada;
+    box-shadow: 5px 5px 5px #706464;
+}
+
+.props-body:hover {
+    background-color: #b1adad;
+    box-shadow: 4px 10px 4px rgb(32, 41, 45);
+    transform: scale(1.01);
+}
+
 /* Location Title */
 .location-title {
     color: rgb(20, 20, 20);
     background: rgba(215, 199, 202, 0.333);
     font-weight: bold;
     box-shadow: 2px 2px 4px;
-    text-shadow: 1px 1px 1px;
     margin-bottom: 50px;
 }
 

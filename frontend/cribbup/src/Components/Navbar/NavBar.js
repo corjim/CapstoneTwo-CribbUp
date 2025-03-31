@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../Context/AuthContext";
+import { AuthContext } from "../Context/AuthContext";
 
 function NavBar() {
     const authContext = useContext(AuthContext);
@@ -12,8 +12,6 @@ function NavBar() {
     }
 
     const { currentUser, logout, loading } = authContext;
-
-    console.log("NavBar - user:", currentUser, "loading:", loading); // ✅ Debugging
 
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
@@ -26,6 +24,7 @@ function NavBar() {
 
                         {loading ? null : currentUser ? (
                             <>
+                                <Nav.Link as={Link} to="/favorites">Favorites</Nav.Link>
                                 <Nav.Link as={Link} to="/profile">My Profile</Nav.Link>
                                 <Button variant="outline-light" onClick={logout}>Logout</Button>
                             </>

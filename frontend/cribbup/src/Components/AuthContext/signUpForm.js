@@ -1,57 +1,124 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import CribbUpApi from "../../Api/CribbupApi";
-//import { AuthContext } from "../../Context/AuthContext";
-
-import "./AuthStyling/SignupForm.css"
+import { AuthContext } from "../Context/AuthContext";
+import { Spinner, Card, Button, Form, Container, Alert } from "react-bootstrap";
+import "./AuthStyling/SignUp.css";
 
 function SignupForm() {
-    //const { signup } = useContext(AuthContext); // Use signup function from context
-    const navigate = useNavigate(); // useNavigate instead of useHistory for React Router v6
-
-    const [formData, setFormData] = useState({
+    const INITIAL_STATE = {
         username: "",
         password: "",
         firstName: "",
         lastName: "",
         email: "",
-    });
+    }
+    const navigate = useNavigate();
+    const { signup, loading } = useContext(AuthContext);
+    const [error, setError] = useState(null);
+
+    const [formData, setFormData] = useState(INITIAL_STATE);
 
     function handleChange(evt) {
         const { name, value } = evt.target;
         setFormData(f => ({ ...f, [name]: value }));
     }
-    // Handles form submission.
+
     async function handleSubmit(evt) {
         evt.preventDefault();
-
         try {
-            const token = await CribbUpApi.signup(formData); // Call API
+            const token = await CribbUpApi.signup(formData);
+            signup(token)
 
-            console.log("✅ Signup Success, Token:", token);
-
-            navigate("/"); // Redirect to homePage.
+            navigate("/"); // Redirect to homepage after signup
 
         } catch (err) {
             console.error("Signup failed:", err);
-        }
+            setError(err.message)
+        };
+    }
+
+    if (loading) {
+        return <Spinner animation="border" className="d-block mx-auto mt-5" />;
     }
 
     return (
-        <form onSubmit={handleSubmit} className="AuthxForm">
-            <label name="username">Username:</label>
-            <input name="username" id="username" value={formData.username} onChange={handleChange} required />
-            <label name="password">Password:</label>
-            <input name="password" id="password" type="password" value={formData.password} onChange={handleChange} required />
+        <Container className="d-flex justify-content-center align-items-center signup-container">
+            <Card className="signup-card shadow">
+                <div>
+                    {error && <Alert variant="danger">{error}</Alert>}
+                </div>
+                <Card.Body>
+                    <h2 className="text-center mb-4">Create an Account</h2>
+                    <p className="text-muted text-center">Join us today!</p>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Username</Form.Label>
+                            <Form.Control
+                                type="text"
+                                name="username"
+                                value={formData.username}
+                                onChange={handleChange}
+                                placeholder="Choose a username"
+                                required
+                            />
+                        </Form.Group>
 
-            <label name="firstName">First Name:</label>
-            <input id="firstName" name="firstName" type="text" value={formData.firstName} onChange={handleChange} required />
-            <label name="lastName">Last Name:</label>
-            <input id="lastName" name="lastName" type="text" value={formData.lastName} onChange={handleChange} required />
-            <label name="email">Email:</label>
-            <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} required />
-            <button>Sign Up</button>
-        </form>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control
+                                type="password"
+                                name="password"
+                                value={formData.password}
+                                onChange={handleChange}
+                                placeholder="Create a password"
+                                required
+                            />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3">
+                            <Form.Label>First Name</Form.Label>
+                            <Form.Control
+                                type="text"
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleChange}
+                                placeholder="Enter your first name"
+                                required
+                            />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3">
+                            <Form.Label>Last Name</Form.Label>
+                            <Form.Control
+                                type="text"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleChange}
+                                placeholder="Enter your last name"
+                                required
+                            />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </Form.Group>
+
+                        <Button type="submit" variant="primary" className="w-100 signup-button">
+                            Sign Up
+                        </Button>
+                    </Form>
+                </Card.Body>
+            </Card>
+        </Container>
     );
 }
 
