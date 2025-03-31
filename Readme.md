@@ -50,11 +50,14 @@ The app will be available at http://localhost:5000.
 
 ##  API Routes
 
-Method	    Endpoint	                Description
-GET 	    /api/properties             Get all property listings
-GET	        /api/favorites/:user	    Get user's favorite properties
-POST	    /api/favorites/:user	    Add a property to favorites
-DELETE	    /api/favorites/:user/:id	Remove a property from favorites
+## Authentication
+
+
+- Method	    Endpoint	                Description
+- GET 	    /api/properties             Get all property listings
+- GET	        /api/favorites/:user	    Get user's favorite properties
+- POST	    /api/favorites/:user	    Add a property to favorites
+- DELETE	    /api/favorites/:user/:id	Remove a property from favorites
 
 
 ## Future Enhancements.
