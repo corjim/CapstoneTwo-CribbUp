@@ -39,25 +39,35 @@ cd cribbup
 ### Install Dependencies
 
 npm install
+
 Create a .env file in the root directory
+DATABASE_URL = your_postgres_connection_string
+ZILLOW_API_KEY = your_zillow_api_key
+JWT_SECRET = your_jwt_secret_key
 
 
 ### Start the Development Server.
 npm start
-
 The app will be available at http://localhost:5000.
-
 
 ##  API Routes
 
-## Authentication
+### Authentication.
+- POST /auth/register → Register a new user.
+- POST /auth/login → Login and receive a JWT.
 
+### User Routes.
+- GET /users/:username → Get user details.
+- PATCH /users/:username → Update user profile.
 
-- Method	    Endpoint	                Description
-- GET 	    /api/properties             Get all property listings
-- GET	        /api/favorites/:user	    Get user's favorite properties
-- POST	    /api/favorites/:user	    Add a property to favorites
-- DELETE	    /api/favorites/:user/:id	Remove a property from favorites
+### Property Routes.
+- GET /properties → Get all properties.
+- GET /properties/:id → Get a single property details.
+
+### Favorites Routes
+- GET /favorites/:username → Get user's favorite properties.
+- POST /favorites/:username → Add a property to favorites.
+- DELETE /favorites/:username/:property_id → Remove a property from favorites.
 
 
 ## Future Enhancements.

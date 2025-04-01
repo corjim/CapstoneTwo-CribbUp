@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import { Card, Button, Carousel } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import FavoriteCard from "./FavoriteCard";

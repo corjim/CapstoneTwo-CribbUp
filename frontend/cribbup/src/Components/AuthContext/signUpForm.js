@@ -19,6 +19,9 @@ function SignupForm() {
 
     const [formData, setFormData] = useState(INITIAL_STATE);
 
+
+    console.log("FORMDATA SIGNUP", formData)
+
     function handleChange(evt) {
         const { name, value } = evt.target;
         setFormData(f => ({ ...f, [name]: value }));

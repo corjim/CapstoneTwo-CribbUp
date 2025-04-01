@@ -1,28 +1,39 @@
 "use strict";
 
 /** Shared config for application; can be required many places. */
-
 require("dotenv").config();
 require("colors");
 
-const SECRET_KEY = process.env.SECRET_KEY || "secret-dev";
+const SECRET_KEY = process.env.SECRET_KEY || "somekey";
+const DATABASE_URL = process.env.DATABASE_URL;
 
 const PORT = 5000;
+const { Pool } = require("pg");
 
-// Use dev database, testing database, or via env var, production database
-// function getDatabaseUri() {
-//   return (process.env.NODE_ENV === "test")
-//     ? "postgresql:///jobly_test"
-//     : process.env.DATABASE_URL || "postgresql:///jobly";
-// }
+console.log("THIS IS DATABASE URL", DATABASE_URL)
 
-let DB_URI;
-
-if (process.env.NODE_ENV === "test") {
-  DB_URI = "CribbUp_test";
-} else {
-  DB_URI = "cribbUp_db"
+if (!DATABASE_URL) {
+  throw new Error("DATABASE_URL is not defined in environment variables.");
 }
+
+const pool = new Pool({
+  connectionString: DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,  // Required for Supabase
+  },
+});
+
+
+console.log("Database Connected:".green, DATABASE_URL);
+
+
+// let DB_URI;
+
+// if (process.env.NODE_ENV === "test") {
+//   DB_URI = "CribbUp_test";
+// } else {
+//   DB_URI = DATABASE_URL
+// }
 
 const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "test" ? 1 : 12;
 
@@ -37,5 +48,6 @@ module.exports = {
   SECRET_KEY,
   PORT,
   BCRYPT_WORK_FACTOR,
-  DB_URI// getDatabaseUri,
+  pool,
+  //DB_URI// getDatabaseUri,
 };

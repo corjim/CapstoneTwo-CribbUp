@@ -44,7 +44,7 @@ function FavoriteCard({ property }) {
 
             } catch (error) {
                 console.error("Error fetching favorites:", error);
-                setError("Failed to fetch favorites.");
+                setError(null);
             }
         }
 

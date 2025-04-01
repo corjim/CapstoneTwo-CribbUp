@@ -67,7 +67,7 @@ function AuthProvider({ children }) {
     }
 
     function logout() {
-        console.log("Logging out...");
+
         setToken(null);
         setCurrentUser(null);
         localStorage.removeItem("token");
