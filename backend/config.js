@@ -12,7 +12,7 @@ const PORT = 5000;
 function getDatabaseUri() {
   return (process.env.NODE_ENV === "test")
     ? "postgresql:///cribbUp_test"
-    : process.env.SUPABASE_URL || "postgresql:///cribbUp_db";
+    : process.env.SUPABASE_URL || process.env.SUPABASE_PSQL;
 }
 
 
