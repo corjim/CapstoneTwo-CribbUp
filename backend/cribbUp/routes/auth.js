@@ -45,7 +45,6 @@ router.post("/token", async function (req, res, next) {
 });
 
 
-
 /** POST /auth/register:   { user } => { token }
  *
  * user must include { username, password, firstName, lastName, email }
@@ -54,9 +53,9 @@ router.post("/token", async function (req, res, next) {
  *
  * Authorization required: none
  */
-
 router.post("/register", async function (req, res, next) {
 
+  console.log("AUTH BODY FROM AUTH REGISTER", req.body)
 
   try {
 

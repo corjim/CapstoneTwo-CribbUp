@@ -6,21 +6,17 @@ import { Spinner, Card, Button, Form, Container, Alert } from "react-bootstrap";
 import "./AuthStyling/SignUp.css";
 
 function SignupForm() {
-    const INITIAL_STATE = {
+    const navigate = useNavigate();
+    const { login, loading } = useContext(AuthContext);
+    const [error, setError] = useState(null);
+
+    const [formData, setFormData] = useState({
         username: "",
         password: "",
         firstName: "",
         lastName: "",
         email: "",
-    }
-    const navigate = useNavigate();
-    const { signup, loading } = useContext(AuthContext);
-    const [error, setError] = useState(null);
-
-    const [formData, setFormData] = useState(INITIAL_STATE);
-
-
-    console.log("FORMDATA SIGNUP", formData)
+    });
 
     function handleChange(evt) {
         const { name, value } = evt.target;
@@ -31,10 +27,11 @@ function SignupForm() {
         evt.preventDefault();
         try {
             const token = await CribbUpApi.signup(formData);
-            signup(token)
 
-            navigate("/"); // Redirect to homepage after signup
+            console.log("THIS TOKEN FROM API", token)
+            login(token)
 
+            navigate("/search"); // Redirect to property page after signup
         } catch (err) {
             console.error("Signup failed:", err);
             setError(err.message)

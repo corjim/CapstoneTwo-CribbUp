@@ -67,7 +67,7 @@ function AuthProvider({ children }) {
     }
 
     function logout() {
-
+        console.log("Logging out...");
         setToken(null);
         setCurrentUser(null);
         localStorage.removeItem("token");
@@ -76,7 +76,6 @@ function AuthProvider({ children }) {
 
     return (
         <AuthContext.Provider value={{ currentUser, setCurrentUser, token, login, signup, logout, loading }}>
-            {error}
             {children}
         </AuthContext.Provider>
     );
