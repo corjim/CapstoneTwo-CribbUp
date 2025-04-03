@@ -5,7 +5,7 @@ import PropertyCard from "./PropertyCard";
 import "./SearchPage.css";
 
 function SearchPage() {
-    const [location, setLocation] = useState(localStorage.getItem("lastLocation") || "");
+    const [location, setLocation] = useState("");
     const [properties, setProperties] = useState(() => {
         const savedProperties = localStorage.getItem("savedProperties");
         return savedProperties ? JSON.parse(savedProperties) : [];
@@ -16,7 +16,7 @@ function SearchPage() {
     const propertiesPerPage = 12;
     const [error, setError] = useState(null);
 
-    const [searchButtonClicked, setSearchButtonClicked] = useState(false); // Ensures API calls is not made on keystrikes.
+    const [searchButtonClicked, setSearchButtonClicked] = useState(false); // Ensures API calls is not made on keystrike.
 
     const handleChange = (evt) => {
         setLocation(evt.target.value);
@@ -24,6 +24,9 @@ function SearchPage() {
 
     // useCallback to prevent unnecessary re-renders
     const handleSearch = useCallback(async (newPage = 1) => {
+
+        console.log("location", location)
+
         if (!location.trim()) {
             setError("Please enter a valid city or ZIP code.");
             return;
@@ -53,7 +56,7 @@ function SearchPage() {
         } finally {
             setLoading(false);
         }
-    }, []
+    }, [location]
     );
 
     //Run search on component mount and when location or properties change
