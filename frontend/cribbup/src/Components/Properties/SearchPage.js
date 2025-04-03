@@ -25,8 +25,6 @@ function SearchPage() {
     // useCallback to prevent unnecessary re-renders
     const handleSearch = useCallback(async (newPage = 1) => {
 
-        console.log("location", location)
-
         if (!location.trim()) {
             setError("Please enter a valid city or ZIP code.");
             return;

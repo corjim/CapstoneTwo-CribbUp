@@ -119,11 +119,7 @@ class CribbUpApi {
     static async signup(userData) {
         try {
 
-            console.log("API USERDTA", userData);
-
             let res = await this.request("auth/register", userData, "post");
-
-            console.log("THIS IS RES FROM API", res)
 
             if (!res) {
                 throw new Error("API did not return a response.");

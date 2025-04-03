@@ -28,7 +28,6 @@ function SignupForm() {
         try {
             const token = await CribbUpApi.signup(formData);
 
-            console.log("THIS TOKEN FROM API", token)
             login(token)
 
             navigate("/search"); // Redirect to property page after signup
